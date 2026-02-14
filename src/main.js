@@ -1,10 +1,10 @@
-const getJoke = require("./joke");
-const core = require("@actions/core");
+const core = require('@actions/core');
+const getJoke = require('./joke');
 
 async function run() {
   const joke = await getJoke();
   console.log(joke);
-  core.setOutput("joke", joke);
+  core.setOutput('joke', joke);
 }
 
 run();
